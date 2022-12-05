@@ -11,7 +11,7 @@ name: Create and publish a Docker image
 
 on:
   push:
-    branches: ['main']
+    branches: ['master']
 env:
   IMAGE_NAME: dbx1000_logging
 jobs:
