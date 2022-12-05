@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=gcc:4.8
+ARG BASE_IMAGE=ubuntu:jammy
 FROM $BASE_IMAGE
 
 # avoid annoying debconf output
