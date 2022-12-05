@@ -2,7 +2,7 @@
 The logging module of the DBx1000 database.
 
 ```markdown
-Please do not forget to create /logs and /results folders before running experiments.
+Please do not forget to create /logs (mandatory) and /results folders before running experiments.
 ```
 
 We include a number of logging algorithms in this module:
