@@ -249,7 +249,7 @@ if __name__ == '__main__':
     # benchmarks = ['TPCC']
     filter = None
     if True:
-        benchmarks = ['YCSB', 'TPCC']
+        benchmarks = ['TPCC'] # ['YCSB', 'TPCC']
         for bench in benchmarks:
             #insert_his('parallel', bench, 'LOG_DATA')
             #insert_his('parallel', bench, 'LOG_COMMAND')
@@ -266,7 +266,7 @@ if __name__ == '__main__':
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_COMMAND', prevent_locktable='true')
             
 
-            insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_DATA')
+            # insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_DATA')
             # insert_his(jobs, 'no', bench, 'SILO', 'LOG_DATA')
             
             # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_DATA')
@@ -277,10 +277,10 @@ if __name__ == '__main__':
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_COMMAND')
-            insert_his(jobs, 'batch', bench, 'SILO', 'LOG_DATA')
-            insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_DATA')
+            # insert_his(jobs, 'batch', bench, 'SILO', 'LOG_DATA')
+            # insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_DATA')
 
-            insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_COMMAND', withold_log='true')
+            # insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_COMMAND', withold_log='true')
     
     if len(sys.argv) > 1:
         filter = sys.argv[1]

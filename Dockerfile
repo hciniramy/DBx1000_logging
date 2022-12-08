@@ -4,7 +4,9 @@ FROM $BASE_IMAGE
 # avoid annoying debconf output
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV WORKDIR  /opt
+ENV WORKDIR  /home/DBx1000_logging
 
-COPY install_deps.sh $WORKDIR
+COPY . $WORKDIR
 RUN bash $WORKDIR/install_deps.sh
+
+RUN cd $WORKDIR && python3 tools/compile.py
