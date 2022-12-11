@@ -271,8 +271,23 @@ if __name__ == '__main__':
             
             # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_DATA')
             # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_COMMAND')
+            insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_COMMAND')
+
             insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_DATA')
             insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_COMMAND')
+
+            insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_COMMAND')
+
+            insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_COMMAND')
+
+            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')
+
+            insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_COMMAND')
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_DATA')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')
