@@ -251,43 +251,43 @@ if __name__ == '__main__':
     if True:
         benchmarks = ['TPCC'] # ['YCSB', 'TPCC']
         for bench in benchmarks:
-            #insert_his('parallel', bench, 'LOG_DATA')
-            #insert_his('parallel', bench, 'LOG_COMMAND')
-            #insert_his('batch', bench, 'LOG_DATA')
-
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA', per_worker_rec='false')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND', per_worker_rec='false')
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_DATA', per_worker_rec='false')
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_COMMAND', per_worker_rec='false')
-            
-            # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA', prevent_locktable='true')
-            # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND', prevent_locktable='true')
-            # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_DATA', prevent_locktable='true')
-            # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_COMMAND', prevent_locktable='true')
-            
 
-            # insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_DATA')
-            # insert_his(jobs, 'no', bench, 'SILO', 'LOG_DATA')
-            
-            # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_DATA')
-            # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_COMMAND')
             insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_DATA')
+            insert_his(jobs, 'no', bench, 'SILO', 'LOG_DATA')
+            insert_his(jobs, 'no', bench, 'SILO', 'LOG_COMMAND')
             insert_his(jobs, 'no', bench, 'NO_WAIT', 'LOG_COMMAND')
+
+            # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
+            # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')
+            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA', prevent_locktable='true')
+            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND', prevent_locktable='true')
+            insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_DATA', prevent_locktable='true')
+            insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_COMMAND', prevent_locktable='true')
 
             insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_DATA')
             insert_his(jobs, 'serial', bench, 'NO_WAIT', 'LOG_COMMAND')
+            insert_his(jobs, 'serial', bench, 'SILO', 'LOG_DATA')
+            insert_his(jobs, 'serial', bench, 'SILO', 'LOG_COMMAND')
 
-            insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_DATA')
-            insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_COMMAND')
+            # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_DATA')
+            # insert_his(jobs, 'serial', bench, 'SILO', 'LOG_COMMAND')
 
-            insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_DATA')
-            insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_COMMAND')
 
-            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
-            insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')
 
-            insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_DATA')
-            insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_COMMAND')
+            # insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_DATA') # TODO: review compile error
+            # insert_his(jobs, 'parallel', bench, 'NO_WAIT', 'LOG_COMMAND') # TODO: review compile error
+
+            # insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_DATA') # TODO: review compile error
+            # insert_his(jobs, 'batch', bench, 'NO_WAIT', 'LOG_COMMAND') # TODO: review compile error
+
+
+
+
+            # insert_his(jobs, 'plover', bench, 'NO_WAIT', 'LOG_COMMAND') # TODO: review compile error
             # insert_his(jobs, 'taurus', bench, 'SILO', 'LOG_DATA')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_DATA')
             # insert_his(jobs, 'taurus', bench, 'NO_WAIT', 'LOG_COMMAND')

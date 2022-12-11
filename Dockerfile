@@ -9,4 +9,4 @@ ENV WORKDIR  /home/dbx1000_logging
 COPY . $WORKDIR
 RUN bash $WORKDIR/install_deps.sh
 
-RUN cd $WORKDIR && python3 tools/compile.py
+#RUN cd $WORKDIR && python3 tools/compile.py
